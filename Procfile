@@ -1,0 +1,1 @@
+web: npm start //tells heroku what to start
