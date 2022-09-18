@@ -1,13 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heroku Test</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css">
+    <title>Game</title>
 </head>
 <body>
-  <h1>This is my heroku deployment!!!</h1>
-  <h2>Exciting!</h2>
+    <section id = "introduction">
+        <center><h2 id = "intro">This is an application with three simple games to try.
+            Please choose one!
+        </h2></center>
+    </section>
+  <center><form class = "enter">
+        <input type = "text" id ="fName" placeholder="Please enter name">
+        <button id = "sBtn">Submit</button>
+    </form></center>
+    <main>
+        <div class = "buttons1">
+            <h3>Find the odd one out</h3>
+            <br>
+            <button class = "rectangle right-r"></button>
+            <button class = "rectangle wrong-5"></button>
+            <button class = "rectangle wrong-6"></button>
+            <button class = "rectangle wrong-7"></button>
+        </div>                                                                                                                                                                                                                  
+    
+        <div class = "buttons2">
+            <h3>Find the odd one out</h3>
+            <button class = "triangle wrong-8"></button>
+            <button class = "triangle right-t"></button>
+            <button class = "triangle wrong-9"></button>
+            <button class = "triangle wrong-10"></button>
+            <button class = "triangle wrong-11"></button>
+        </div>
+        
+        <div class = "buttons3">
+            <h3>Find the odd one out</h3>
+            <button class = "dot wrong"></button>
+            <button class = "dot wrong-1"></button>
+            <button class = "dot wrong-2"></button>
+            <button class = "dot right"></button>
+            <button class = "dot wrong-3"></button>
+            <button class = "dot wrong-4"></button>
+        </div>
+
+        <div class = "fruit-list">
+        </div>
+        <div class = "fruit-ninja"></div>
+        
+        <div class = "three-boxes">
+            <div class = "box first-box">
+                <div class = "help">
+                    <button class = "question help1">?</button>
+                    <div class = "hide help-1">
+                        Can you spot the odd one out? One is not like the other.
+                         Try and find the odd one to advance to the next level.
+                    </div>
+                </div>
+                <div id = "first-text"><h3>Spot the Odd One</h3></div>
+                <button class = "play play1">Play</button>
+            </div>
+            <div class = "box second-box">
+                <div class = "help">
+                    <button class = "question help2">?</button>
+                    <div class = "hide help-2">
+                        Can you answer the riddle? A riddle will be randomly generated
+                        and you will have to guess the answer to the riddle. The answer
+                        to the riddle should only be one word
+                    </div>
+                </div>
+                <div id = "second-text"><h3>Guess the Riddle</h3></div>
+                <button class = "play play2">Play</button>
+            </div>
+            <div class = "box third-box">
+                <div class = "help">
+                    <button class = "question help3">?</button>
+                    <div class = "hide help-3">
+                        Can you figure out the word? A word will be randomly generated
+                        and you will have to guess the word by putting in a letter each time.
+                        Can you figure it out before it is too late?   
+                    </div>
+                </div>
+                <div id = "third-text"><h3>HangMan</h3></div>
+                <button class = "play play3">Play</button>
+            </div>
+        </div>
+        
+        <div class = "riddle-box">
+            <form id = "riddleForm">
+                <h3>Riddles!</h3>
+                <h4>Can you answer the riddle with one word?</h4>
+                <label for = "riddle-answer" id = "rr"></label>
+                <br>
+            </form>
+            <label id = "show"></label>
+        </div>
+
+        <div class = "replayDiv">
+            <h3>Would you like to play again? Add your own?
+            </h3>
+            <button id = "yes">Yes</button>
+            <button id = "no">No</button>
+            <button id = "insert">Add a riddle</button>
+        </div>
+
+        <div class = "postDiv">
+            <form id = "postRiddle">
+                <h3>Enter your riddle. Please include only one word answers:</h3>
+                <label for = "riddleQ" id = "rQ">Question: </label>
+                <input type = "text" id = "rQuestion">
+                <br>
+                <label for = "answerQ" id = "aQ">Answer: </label>
+                <input type = "text" id = "aQuestion">
+                <br>
+                <label for = "hintQ" id = "hQ">Hint: </label>
+                <input type = "text" id = "hintQ">
+                <br>
+                <input type = "submit" value = "Submit">
+            </form>
+        </div>
+
+        <div class = "hangman">
+            <div id = "hangPic">
+            </div>
+            <div id = "inputChar"></div>
+            <div id = "charHint"></div>
+            <div id = "hangingInput"></div>
+        </div>
+
+        <div class = "addHangObjects">
+            <form id = "adding-hangman-word">
+                <h3>Enter your word and a hint:</h3><br>
+                <label for = "hWord">Word: </label>
+                <input type = "text" id = "hWord">
+                <br>
+                <label for = "hAnswer">Hint: </label>
+                <input type = "text" id = "hAnswer">
+                <br>
+                <input type = "submit" value = "Submit">
+            </form>
+        </div>
+        <div class = "playHAgain">
+            <div id = "insert"></div>
+            <center><h3>Would you like to:</h3>
+                <br>
+                <button id = "playA">Play Again?</button>
+                <button id = "playN">Return</button>
+                <button id = "playW">Add a word?</button></center>
+        </div>
+
+    </main>
+    <div class = "fLink">
+        <a href = "feedback.html">Leave a feedback!</a>
+    </div>
+    <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src= "index.js"></script>
 </body>
 </html>
