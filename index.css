@@ -1,0 +1,339 @@
+.buttons1, .buttons2, .buttons3, .addHangObjects, .playHAgain{
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.dot {
+    border-radius: 50%;
+    border: none;
+    padding: 20px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.rectangle {
+    height: 100 px;
+    width: 150 px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.triangle {
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+/* Circles */
+.wrong-1, .wrong-2, .wrong-3, .wrong-4, .wrong{
+    background-color: rgb(5, 90, 90);
+}
+.right{
+    background-color: rgb(7, 90, 100);
+}
+
+/* Rectangles */
+.wrong-5, .wrong-6,.wrong-7 {
+    background-color:rgb(194, 108, 10);
+}
+.right-r{
+    background-color:rgb(245, 189, 4);
+}
+
+/* Triangles */
+.wrong-8, .wrong-9, .wrong-10, .wrong-11, .wrong-12{
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid rgb(10, 194, 10);
+}
+.right-t{
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid rgb(7, 163, 7);
+}
+
+.fruit-list{
+    display: grid;
+    margin: auto;
+    border: 2px solid grey;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px;
+    width: 700px;
+    justify-content: center;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
+}
+
+.listCSS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    box-shadow: 1px 1px rgb(3, 3, 3);
+    border-radius: 5px;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+}
+
+.imageCSS{
+    margin: auto;
+}
+
+.listCSS button{
+    background-color: transparent;
+    border: none;
+}
+
+.fruit-ninja{
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.three-boxes{
+    display: grid;
+    margin: auto;
+    border: 2px solid grey;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px;
+    width: 700px;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.box{
+    box-sizing: border-box;
+    border: 2px solid grey;
+    box-shadow: 1px 1px rgb(3, 3, 3);
+    border-radius: 5px;
+    padding: 5px;
+    height: 150px;
+    width: 175px;
+    justify-content: center;
+}
+
+.play{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-family: Courier;
+    font-weight: bold;
+}
+
+.play:hover{
+    background-color: gray;
+    border: solid gray;
+    border-radius: 5px;
+}
+
+.first-box button, .second-box button, .third-box button{
+    margin-top: auto;
+}
+
+#first-text, #second-text, #third-text{
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: rgba(200, 54, 54, 0.75);
+}
+
+.first-box{
+    display: flex;
+    background-image: url('../images/dots.png');
+    flex-direction: column;
+    text-align: center;
+}
+
+.second-box{
+    display: flex;
+    background-image: url('../images/jest.png');
+    flex-direction: column;
+    text-align: center;
+}
+
+.third-box{
+    display: flex;
+    background-image: url('../images/hangman.png');
+    flex-direction: column;
+    text-align: center;
+}
+
+.help{
+    display: flex;
+    justify-content: right;
+}
+.question{
+    border-radius: 50%;
+}
+
+.help1:hover + .help-1, .help2:hover + .help-2, .help3:hover + .help-3{
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 175px;
+    font-family: Courier;
+}   
+
+.riddle-box, .replayDiv, .postDiv, .failed, .success{
+    display: grid;
+    margin: auto;
+    border: 2px solid grey;
+    background-color: beige;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    width: 700px;
+    justify-content: center;
+    grid-template-columns: 300px;
+}
+
+.under{
+    border-radius: 50%;
+    padding: 5px;
+    color: black
+}
+
+#postRiddle{
+    display: block;
+    align-items: center;
+}
+
+#rQ, #aQ, #hQ{
+    display: table-cell;
+}
+
+.feedBack-Box, .hangman{
+    display: grid;
+    margin: auto;
+    border: 2px solid grey;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px;
+    width: 700px;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+#hangPic, #inputChar{
+    border: 2px solid grey;
+    background-color: beige;
+    padding: 5px;
+    width: 340px;   
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#hangingInput, #charHint{
+    padding: 10px;
+    width: 340px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+/* #adding-hangman-word{
+    margin:auto;
+} */
+
+.horizontal{
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+.alphabet{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    font-size: 18pt;
+    border-radius: 25%;
+    background-color: pink;
+}
+
+#charHint{
+    font-size: 18pt;
+    font-family: Arial;
+}
+
+#showHint{
+    font-size: 12pt;
+    background-color: none;
+    border-radius: 20%;
+}
+
+#feedText{
+    margin: auto;
+}
+
+#textName{
+    width: 200px;
+}
+
+#feedBack{
+    width: 200px;
+    height: 150px;
+}
+
+.fLink, .hLink{
+    width: 200px;
+    height: 25px;
+    margin: auto;
+}
+
+.author img{
+    width: 75%;
+    height: 95%;
+    justify-content: center;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+main{
+    margin-top: 25px;
+    text-align: inline-block;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color:black;
+}
+
+a, u{
+    text-decoration: none;
+}
+
+a:hover{
+    color:chocolate;
+    border: 5px gray;
+}
+
+.hide{
+    display: none;
+}
